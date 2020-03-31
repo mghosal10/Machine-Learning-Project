@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document Classification</title>
+  <link rel="stylesheet" type= "text/css"  href="{{ url_for('static', filename='home.css')}}">
+</head>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<body bgcolor="#9BDBB4">
+<header class="navbar">
+    <h1>DOCUMENT CLASSIFIER</h1>
+    <div class="outer home">
+        <div class="middle">
+            <div class= 'firstdiv'>
+                <center>
+                    <form action="/api/predict" method="post" enctype="multipart/form-data" class='formData'>
+                      <p id="label1">
+                        Upload your CSV testing file
+                      </p>
+                        <input type="file" name="file" accept=".csv" required/>
+                      <br><br>
+                        <input type="submit" value="Upload">
+                      </form>
+                </center>
+            </div>
+        </div>
+    </div>
+  </header>
+</body>
+</html>
+
