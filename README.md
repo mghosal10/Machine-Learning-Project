@@ -15,4 +15,6 @@ Train a document classification model and deploy the model to a public cloud pla
 5. Upload all the files to the EC2 instance using FileZilla/Putty
 6. Navigate to the project directory in the EC2 instance and run webservice.py
 
+The project can be tested at http://ec2-3-134-94-20.us-east-2.compute.amazonaws.com:5000/
+
 
